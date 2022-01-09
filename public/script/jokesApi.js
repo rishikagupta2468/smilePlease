@@ -24,13 +24,12 @@ function jokes(){
 
 function tellJoke(){
     speech.text = jokeText.innerText;
-    if(speech.voice)
-        window.speechSynthesis.speak(speech);
+    window.speechSynthesis.speak(speech);
 }
 
 function updateVoice(){
     const voices = speechSynthesis.getVoices()
-    for(var i = 0; i < 10 ; i++) {
+    for(var i = 0; i < 20 ; i++) {
         var option = document.createElement('option');
         option.textContent = voices[i].name;
         option.value = i
