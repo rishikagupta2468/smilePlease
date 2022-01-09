@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Slabo+27px&display=swap');
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #140602;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+}
+
+button{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1.3rem;
+    background-color:#cc826e;
+    border-style: solid;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+button:hover{
+    border-color: rgb(151, 64, 231);
+    background-color: #c97761;
+}
+
+.contact{
+    width: 20px;
+    height: 20px;
+}
+#jokeText{
+    color: rgb(255, 255, 255)
+}
+
+#voice{
+    outline: none;
+    padding: 9px;
+    min-width: 75px;
+    color: #e9ac9c;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    appearance: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+#voice:hover{
+    color:#cc826e;
+}
+
+footer{
+    color: rgb(255, 255, 255);
+}
