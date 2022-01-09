@@ -30,7 +30,7 @@ function tellJoke(){
 
 function updateVoice(){
     const voices = speechSynthesis.getVoices()
-    for(var i = 0; i < 5 ; i++) {
+    for(var i = 0; i < 10 ; i++) {
         var option = document.createElement('option');
         option.textContent = voices[i].name;
         option.value = i
