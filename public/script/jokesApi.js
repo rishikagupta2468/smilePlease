@@ -7,7 +7,6 @@ const speech = new SpeechSynthesisUtterance();
 //bind bind with the function when window is successfully loaded
 window.onload = function () {
     jokeBtn.addEventListener('click',jokes);
-    speechSynthesis.addEventListener('voiceschanged',updateVoice);
 };
 
 
@@ -27,21 +26,6 @@ function tellJoke(){
     window.speechSynthesis.speak(speech);
 }
 
-function updateVoice(){
-    const voices = speechSynthesis.getVoices()
-    for(var i = 0; i < 20 ; i++) {
-        var option = document.createElement('option');
-        option.textContent = voices[i].name;
-        option.value = i
-        voice.appendChild(option);
-      }
 
-    voice.addEventListener('change',(e)=>{
-        speechSynthesis.cancel()
-        const selectedVoice = e.target.value;
-        speech.voice = voices[selectedVoice]
-        tellJoke()
-    })
-}
 
 
